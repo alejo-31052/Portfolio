@@ -1,0 +1,98 @@
+@font-face {
+    font-family: "Archivo Black";
+    src: url(../fonts/fonts/ArchivoBlack-Regular.woff) format(woff),
+         url(../fonts/fonts/ArchivoBlack-Regular.woff2) format(woff2);
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/fonts/OpenSans-Regular.woff) format(woff),
+        url(../fonts/fonts/OpenSans-Regular.woff2) format(woff2);
+}  
+
+@font-face {
+    font-family: 'Open Sans Semi';
+    src: url(../fonts/fonts/OpenSans-SemiBold.woff) format(woff),
+        url(../fonts/fonts/OpenSans-SemiBold.woff2) format(woff2);
+} 
+
+body{
+    margin: 0;
+    background-color: #111111;
+    
+}
+header, main, footer{
+padding: 40px 8.33% 0 8.33%;
+}
+header{
+    background: radial-gradient(
+        circle at 75% 50%,
+        #6D6DFF 0%,
+        #111111 30%
+    );
+    background-size: cover;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.profile-title, .skills-title{
+    font-family: 'Archivo Black';
+    color: #ffffff;
+    
+}
+
+.profile-title{
+    font-size: 72px;
+}
+.profile-skills-text, .profile-text, .profile-links-urls{
+    font-family: 'Open Sans';
+    color: #ffffff;
+    font-size: 18px;
+
+}
+
+.profile-skills-text{
+    opacity: 50%;
+}
+
+
+
+.profile-image{
+    width: 450px;
+    height: 450px;
+}
+
+.profile-link{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 30px 0 0 0;
+}
+.profile-links-urls{
+    text-decoration: none;
+}
+
+.skills{
+    margin: 110px 0 0 0;
+}
+
+.skills-title{
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+
+.skills-container{
+    display: grid;
+    gap:180px;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+}
+.skills-images{
+    width: 50px;
+    height: 57px;
+}
