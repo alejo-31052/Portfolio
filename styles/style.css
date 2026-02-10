@@ -176,3 +176,34 @@ header{
     align-items: center;
     gap: 10px ;
 }
+
+footer{
+    margin: 100px 0 0 0;
+    padding: 0;
+}
+
+.contact-information{
+    text-align: center;
+}
+
+.contact-title{
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+.email-text{
+    color: #6D6DFF;
+    text-decoration: none;
+}
+
+.social-media{
+    margin: 30px auto 100px auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.social-media-icon{
+    width: 28px;
+    height: 28px;
+}
