@@ -119,12 +119,12 @@ header{
 
 .project-description{
     background-color: #1c1c1c;
-    width: 590px;
+    width: calc((100vw - (100vw * 0.083 * 2)) / 2);
 }
 
 .projects-shown{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 1.25rem;
     height: auto;
 }
@@ -134,7 +134,7 @@ header{
 }
 
 .projects-images{
-    width: 590px;
+    width: 100%;
     height: 330px;
 }
 
@@ -144,7 +144,7 @@ header{
     align-items: center;
     gap: 10px;
     top: 86%;
-    right: 80%
+    margin: 0 0 0 10px;
 }
 
 .project-technologies{
@@ -227,3 +227,6 @@ footer{
     height: 28px;
 }
 
+.website-links-urls:hover, .project-link-url:hover, .email-text:hover, .social-media-icon:hover{
+    opacity: 50%;
+}
