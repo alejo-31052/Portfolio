@@ -119,7 +119,7 @@ header{
 
 .project-description{
     background-color: #1c1c1c;
-    width: calc((100vw - (100vw * 0.083 * 2)) / 2);
+    /* width: calc((100vw - (100vw * 0.083 * 2)) / 2); */
 }
 
 .projects-shown{
