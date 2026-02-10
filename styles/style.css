@@ -19,6 +19,13 @@
 body{
     margin: 0;
     background-color: #111111;
+
+    background: radial-gradient(
+        circle at 50% 90%,
+        #2a2a52 0%,
+        #111111 15%
+        );
+        
     
 }
 header, main, footer{
@@ -74,8 +81,16 @@ header{
     padding: 0;
     margin: 30px 0 0 0;
 }
-.profile-links-urls, .project-link-url{
+.website-links-urls, .project-link-url{
     text-decoration: none;
+}
+
+.website-links-urls{
+    padding-bottom: 5px;
+    background: linear-gradient(90deg, #4C1A97, #6D6DFF);
+    background-repeat: no-repeat;
+    background-size: 100% 3px;
+    background-position: 0 100%;
 }
 
 .skills{
@@ -99,6 +114,7 @@ header{
 
 .main{
     margin: 110px 0 0 0;
+    overflow: visible;
 }
 
 .project-description{
@@ -171,10 +187,13 @@ header{
 
 .project-info-links{
     font-size: 16px;
-    opacity: 60%;
     display: flex;
     align-items: center;
     gap: 10px ;
+}
+
+.github-url{
+    color: #ffffff;
 }
 
 footer{
@@ -206,4 +225,8 @@ footer{
 .social-media-icon{
     width: 28px;
     height: 28px;
+}
+
+.website-links-urls:hover, .project-link-url:hover, .email-text:hover, .social-media-icon:hover{
+    opacity: 50%;
 }
