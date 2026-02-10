@@ -120,13 +120,13 @@ header{
 .project-description{
     background-color: #1c1c1c;
     width: calc((100vw - (100vw * 0.083 * 2)) / 2);
+    height: auto;
 }
 
 .projects-shown{
     display: flex;
     justify-content: center;
     gap: 1.25rem;
-    height: auto;
 }
 
 .first-project, .second-project{
@@ -156,7 +156,11 @@ header{
     margin: 30px 30px 30px 30px;
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    min-height: 50vh;
+}
+
+.spacer {
+    flex-grow: 1;
 }
 
 .third-title{
