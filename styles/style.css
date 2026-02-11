@@ -34,7 +34,7 @@ padding: 40px 8.33% 0 8.33%;
 header{
     background: radial-gradient(
         circle at 75% 50%,
-        #6D6DFF 0%,
+        #2a2a52 0%,
         #111111 30%
     );
     background-size: cover;
@@ -233,4 +233,57 @@ footer{
 
 .website-links-urls:hover, .project-link-url:hover, .email-text:hover, .social-media-icon:hover{
     opacity: 50%;
+}
+
+@media only screen and (max-width: 769px) {
+    body{
+    margin: 0;
+    background-color: #111111;
+
+    background: radial-gradient(
+        circle at 50% 92%,
+        #2a2a52 0%,
+        #111111 15%
+        );
+        
+    
+}
+
+    header, main, footer{
+        padding: 0 5.2% 0 5.2%;
+    }
+header{
+    background: radial-gradient(
+        circle at 75% 30%,
+        #2a2a52 0%,
+        #111111 50%
+    );
+    background-size: cover;
+}
+    .main-title{
+        font-size: 58px;
+    }
+    .profile-image{
+        width: 216px;
+        height: 280px;
+    }
+    .skills-container{
+        gap: 78px   ;   
+    }
+    .skills-images{
+height: 50px;
+
+    }
+    .projects-shown{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+    .project-description{
+    background-color: #1c1c1c;
+    width: calc(100vw - (100vw * 0.052 * 2));
+    height: auto;
+}
+
 }
