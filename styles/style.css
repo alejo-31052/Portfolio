@@ -237,16 +237,12 @@ footer{
 
 @media only screen and (max-width: 769px) {
     body{
-    margin: 0;
-    background-color: #111111;
 
     background: radial-gradient(
         circle at 50% 92%,
         #2a2a52 0%,
         #111111 15%
-        );
-        
-    
+        ); 
 }
 
     header, main, footer{
@@ -286,4 +282,52 @@ height: 50px;
     height: auto;
 }
 
+}
+
+@media only screen and (max-width: 481px){
+    
+    header{
+    background: radial-gradient(
+        circle at 50% 20%,
+        #2a2a52 0%,
+        #111111 50%
+    );
+    background-size: cover;
+}
+
+    .header{
+        flex-direction: column;
+    }
+
+    .image-container{
+        order: 1;
+        text-align: center;
+    }
+
+    .profile-image{
+        width: 280px;
+        aspect-ratio: 1 / 1;
+    }
+
+    .profile-info{
+        order: 2;
+    }
+
+    .main-title{
+        font-size: 38px;
+    }
+
+    .profile-skills-text, .website-text, .website-links-urls, .project-link-url, .project-info-links{
+        font-size: 16px;
+    }
+
+    .second-title{
+        font-size: 28px;
+    }
+
+    .skills-images{
+        width: 30px;
+        height: 34px;
+
+    }
 }
